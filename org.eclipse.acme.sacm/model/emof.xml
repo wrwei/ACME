@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1">
+<emof:Package xmlns:emof="http://schema.omg.org/spec/MOF/2.0/emof.xml" xmi:id="eee_1045467100313_135436_1" name="SACM">
+<ownedComment xmi:id="_18_1beta_8c90288_1415101994820_370998_4336" body="Author:rwei.&#10;Created:01/08/17 14:26.&#10;Title:.&#10;Comment:.&#10;">
+<annotatedElement xmi:idref="eee_1045467100313_135436_1"/>
+</ownedComment>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594250412_840636_4783" name="Element" isAbstract="true"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594271172_694893_4810" name="SACMElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501594250412_840636_4783"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594360047_496474_4839" name="gid" lower="0">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#String" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594409819_826194_4845" name="isCitation" lower="0"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594440105_128975_4850" name="isAbstract" lower="0"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594643273_990546_4944" name="citedElement" type="_18_5_1_46401b8_1501594271172_694893_4810" lower="0"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503047093501_183037_7524" name="abstractForm" type="_18_5_1_46401b8_1501594271172_694893_4810" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594618473_865628_4910" name="ModelElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501594271172_694893_4810"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595035891_683901_5335" name="name" type="_18_5_1_46401b8_1501594708670_971556_5003" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595126147_6370_5388" name="description" type="_18_5_1_46401b8_1501594681156_22767_4973" lower="0" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595132344_479236_5409" name="implementationConstraint" type="_18_5_1_46401b8_1501594921444_101322_5193" lower="0" upper="*" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595139145_333078_5454" name="taggedValue" type="_18_5_1_46401b8_1501594936855_82207_5247" lower="0" upper="*" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595276640_116203_5523" name="note" type="_18_5_1_46401b8_1501594931404_837438_5220" lower="0" upper="*" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594681156_22767_4973" name="Description">
+<superClass xmi:idref="_18_5_1_46401b8_1501594618473_865628_4910"/>
+<superClass xmi:idref="_18_5_1_46401b8_1501594880413_361267_5136"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594708670_971556_5003" name="LangString">
+<superClass xmi:idref="_18_5_1_46401b8_1501594250412_840636_4783"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594717339_523855_5029" name="lang" lower="0">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#String" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594737382_568424_5033" name="content" lower="0">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#String" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594789692_401079_5041" name="ExpressionLangString">
+<superClass xmi:idref="_18_5_1_46401b8_1501594708670_971556_5003"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502703115630_50955_7912" name="expression" type="_18_5_1_46401b8_1501595783421_293471_5660"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594819587_741755_5071" name="MultiLangString">
+<superClass xmi:idref="_18_5_1_46401b8_1501594250412_840636_4783"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501594848915_447682_5105" name="value" type="_18_5_1_46401b8_1501594708670_971556_5003" upper="*" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594880413_361267_5136" name="UtilityElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501594271172_694893_4810"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595019030_987537_5293" name="content" type="_18_5_1_46401b8_1501594819587_741755_5071" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594921444_101322_5193" name="ImplementationConstraint">
+<superClass xmi:idref="_18_5_1_46401b8_1501594880413_361267_5136"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594931404_837438_5220" name="Note">
+<superClass xmi:idref="_18_5_1_46401b8_1501594880413_361267_5136"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501594936855_82207_5247" name="TaggedValue">
+<superClass xmi:idref="_18_5_1_46401b8_1501594880413_361267_5136"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501595028082_408789_5314" name="key" type="_18_5_1_46401b8_1501594819587_741755_5071" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501595468185_165162_5576" name="ArtifactElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501594618473_865628_4910"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501595719015_693807_5606" name="Base::ArtifactElement" isAbstract="true"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501595760604_622904_5633" name="TerminologyElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501595719015_693807_5606"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501595783421_293471_5660" name="Terminology::ExpressionElement" isAbstract="true"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596009725_484696_5723" name="TerminologyPackageBinding">
+<superClass xmi:idref="_18_5_1_46401b8_1501596028930_979009_5777"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501596261491_704085_5907" name="participantPackage" type="_18_5_1_46401b8_1501596028930_979009_5777" lower="2" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596018868_901447_5750" name="TerminologyPackageInterface">
+<superClass xmi:idref="_18_5_1_46401b8_1501596028930_979009_5777"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502703424856_625051_8210" name="implements" type="_18_5_1_46401b8_1501596028930_979009_5777"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596028930_979009_5777" name="TerminologyPackage">
+<superClass xmi:idref="_18_5_1_46401b8_1501595760604_622904_5633"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501596159517_951612_5835" name="terminologyElement" type="_18_5_1_46401b8_1501595760604_622904_5633" lower="0" upper="*" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596325231_929721_5936" name="TerminologyAsset" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501595760604_622904_5633"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596347011_492456_5966" name="ExpressionElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501596325231_929721_5936"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501596532441_564486_6150" name="category" type="_18_5_1_46401b8_1501596451393_640611_6056" lower="0" upper="*"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502703500786_590941_8238" name="value">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#String" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596411362_255581_5996" name="Base::LangString"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596451393_640611_6056" name="Category">
+<superClass xmi:idref="_18_5_1_46401b8_1501596325231_929721_5936"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596457789_92074_6083" name="Expression">
+<superClass xmi:idref="_18_5_1_46401b8_1501596347011_492456_5966"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501596613737_472525_6191" name="element" type="_18_5_1_46401b8_1501596347011_492456_5966" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596463095_493831_6110" name="Term">
+<superClass xmi:idref="_18_5_1_46401b8_1501596347011_492456_5966"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501596673577_205763_6252" name="externalReference" lower="0">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#String" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501596739387_621227_6288" name="origin" type="_18_5_1_46401b8_1501596705516_340438_6257" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596705516_340438_6257" name="Base::ModelElement" isAbstract="true"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596837520_829523_6376" name="ArtifactPackage">
+<superClass xmi:idref="_18_5_1_46401b8_1501595719015_693807_5606"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597026564_409428_6465" name="artifactElement" type="_18_5_1_46401b8_1501595719015_693807_5606" lower="0" upper="*" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596958219_383176_6404" name="ArtifactPackageBinding">
+<superClass xmi:idref="_18_5_1_46401b8_1501596837520_829523_6376"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597060080_832355_6504" name="participantPackage" type="_18_5_1_46401b8_1501596837520_829523_6376" lower="2" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501596966707_592707_6431" name="ArtifactPackageInterface">
+<superClass xmi:idref="_18_5_1_46401b8_1501596837520_829523_6376"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502704405975_163385_8515" name="implements" type="_18_5_1_46401b8_1501596837520_829523_6376"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597107302_567911_6566" name="ArtifactAsset" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501595719015_693807_5606"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503045958470_594463_7208" type="_18_5_1_46401b8_1503045958452_367374_7206" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503046014540_258222_7266" name="property" type="_18_5_1_46401b8_1503045916965_289896_7152" lower="0" upper="*" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597135279_901594_6596" name="Technique">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597140580_695136_6623" name="Participant">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597146904_558446_6650" name="Activity">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597167495_615037_6730" name="startTime" lower="0"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597188447_933962_6734" name="endTime" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597152932_589122_6677" name="Event">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597211724_435605_6738" name="occurence" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597250083_606966_6743" name="ArtifactAssetRelationship">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597423234_227031_6821" name="source" type="_18_5_1_46401b8_1501597107302_567911_6566" upper="*"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597439586_421162_6854" name="target" type="_18_5_1_46401b8_1501597107302_567911_6566" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597314310_654848_6776" name="Artifact">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597321384_133175_6802" name="version" lower="0">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#String" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597349491_450839_6807" name="date" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597336740_880396_6804" name="stSPECIFIED&gt;"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597532906_219960_6918" name="Base::MultiLangString"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597549858_646187_6948"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597762559_512418_7169" name="ArgumentationElement" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501595719015_693807_5606"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597779100_657519_7196" name="ArgumentPackage">
+<superClass xmi:idref="_18_5_1_46401b8_1501597762559_512418_7169"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501597945473_515241_7308" name="argumentationElement" type="_18_5_1_46401b8_1501597762559_512418_7169" lower="0" upper="*" isComposite="true"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597866284_678481_7223" name="ArgumentPackageBinding">
+<superClass xmi:idref="_18_5_1_46401b8_1501597779100_657519_7196"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598010575_111798_7383" name="participantPackage" type="_18_5_1_46401b8_1501597779100_657519_7196" lower="2" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501597882111_332512_7250" name="ArgumentPackageInterface">
+<superClass xmi:idref="_18_5_1_46401b8_1501597779100_657519_7196"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502704347775_716906_8248" name="implements" type="_18_5_1_46401b8_1501597779100_657519_7196"/>
+</ownedType>
+<ownedType xmi:type="emof:Enumeration" xmi:id="_18_5_1_46401b8_1501598040617_58094_7412" name="AssertionDeclaration">
+<ownedLiteral xmi:id="_18_5_1_46401b8_1501598054662_932841_7435" name="asserted"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1501598069405_415416_7437" name="needsSupport"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1501598078241_593412_7439" name="assumed"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1501598084791_335145_7441" name="axiomatic"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1501598092517_671012_7443" name="defeated"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1501598099005_420279_7445" name="asCited"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598119489_407909_7448" name="ArgumentAsset" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501597762559_512418_7169"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598147478_748521_7475" name="AssertedRelationship" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501598214057_928539_7507"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598180272_85242_7501" name="isCounter"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598422221_719070_7642" name="source" type="_18_5_1_46401b8_1501598119489_407909_7448" upper="*"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598427379_886945_7663" name="target" type="_18_5_1_46401b8_1501598119489_407909_7448" lower="0" upper="1"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502461199188_319723_6152" name="reasoning" type="_18_5_1_46401b8_1501598392728_635080_7608" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598214057_928539_7507" name="Assertion" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1501598119489_407909_7448"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598223081_269021_7533" name="assertionDeclaration" type="_18_5_1_46401b8_1501598040617_58094_7412" default="asserted"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598354028_717009_7579" name="metaClaim" type="_18_5_1_46401b8_1501598336647_533402_7545" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598336647_533402_7545" name="Claim">
+<superClass xmi:idref="_18_5_1_46401b8_1501598214057_928539_7507"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598392728_635080_7608" name="ArgumentReasoning">
+<superClass xmi:idref="_18_5_1_46401b8_1501598119489_407909_7448"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501599226712_640469_7994" name="structure" type="_18_5_1_46401b8_1501597779100_657519_7196" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598546604_350919_7744" name="ArtifactReference">
+<superClass xmi:idref="_18_5_1_46401b8_1501598119489_407909_7448"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501598581509_523302_7778" name="referencedArtifactElement" type="_18_5_1_46401b8_1501595719015_693807_5606" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598677786_648168_7840" name="AssertedInference">
+<superClass xmi:idref="_18_5_1_46401b8_1501598147478_748521_7475"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598691562_535791_7867" name="AssertedEvidence">
+<superClass xmi:idref="_18_5_1_46401b8_1501598147478_748521_7475"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598697404_482546_7894" name="AssertedContext">
+<superClass xmi:idref="_18_5_1_46401b8_1501598147478_748521_7475"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598719354_880948_7921" name="AssertedArtifactSupport">
+<superClass xmi:idref="_18_5_1_46401b8_1501598147478_748521_7475"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501598737162_563009_7948" name="AssertedArtifactContext">
+<superClass xmi:idref="_18_5_1_46401b8_1501598147478_748521_7475"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501599387856_997512_8050" name="AssuranceCasePackage">
+<superClass xmi:idref="_18_5_1_46401b8_1501595719015_693807_5606"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501599474707_78076_8144" name="assuranceCasePackage" type="_18_5_1_46401b8_1501599387856_997512_8050" lower="0" upper="*" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501599695712_610578_8324" name="argumentPackage" type="_18_5_1_46401b8_1501599653606_113422_8266" lower="0" upper="*" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501599700113_659397_8345" name="terminologyPackage" type="_18_5_1_46401b8_1501599663527_446701_8293" lower="0" upper="*" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501599704600_273931_8366" name="artifactPackage" type="_18_5_1_46401b8_1501599630935_550632_8239" lower="0" upper="*" isComposite="true"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502703188130_354857_7945" name="interface" type="_18_5_1_46401b8_1501599397748_18258_8077" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501599397748_18258_8077" name="AssuranceCasePackageInterface">
+<superClass xmi:idref="_18_5_1_46401b8_1501599387856_997512_8050"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502703242681_575128_7978" name="implements" type="_18_5_1_46401b8_1501599387856_997512_8050"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501599406228_3010_8104" name="AssuranceCasePackageBinding">
+<superClass xmi:idref="_18_5_1_46401b8_1501599387856_997512_8050"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1501599563782_463869_8210" name="participantPackage" type="_18_5_1_46401b8_1501599387856_997512_8050" lower="2" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501599630935_550632_8239" name="Artifact::ArtifactPackage"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501599653606_113422_8266" name="Argument::ArgumentPackage"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501599663527_446701_8293" name="Terminology::TerminologyPackage"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501671577933_630414_5576" name="Resource">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1501760005683_375456_5457" name="Base::TaggedValue"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464150965_2667_6691" name="Actor"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464256851_497531_6754" name="_Claim">
+<superClass xmi:idref="_18_5_1_46401b8_1503069168103_170309_8295"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464286204_114004_6781" name="AssertContext">
+<superClass xmi:idref="_18_5_1_46401b8_1502465578796_967614_7418"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464308032_829747_6808" name="AddSupportClaim"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464376857_627526_6835" name="AssertEvidence">
+<superClass xmi:idref="_18_5_1_46401b8_1502465578796_967614_7418"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464383514_998194_6862" name="ProvideSupportingArgument"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464468728_645933_6916" name="DescribeReasoning">
+<superClass xmi:idref="_18_5_1_46401b8_1502466755424_681772_7737"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464533870_930094_6944" name="ReferenceArtifact">
+<superClass xmi:idref="_18_5_1_46401b8_1503065953574_284657_7307"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464606975_307569_6971" name="ProvidePeerClaim"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464720943_609791_7053" name="ProvideIndividualPeerClaim"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502464960968_166542_7216" name="MakeAssertion" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1503065953574_284657_7307"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502465030451_360081_7277" name="AssertInference">
+<superClass xmi:idref="_18_5_1_46401b8_1502465578796_967614_7418"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502465164658_339765_7331" name="ProvideReasoningStructure">
+<superClass xmi:idref="_18_5_1_46401b8_1502466755424_681772_7737"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502465450902_140153_7364" name="Argument::Claim"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502465578796_967614_7418" name="AssertRelationship" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1502464960968_166542_7216"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502465693832_676930_7447" name="isCounter">
+<type href="http://schema.omg.org/spec/MOF/2.0/emof.xml#Boolean" xmi:type="emof:PrimitiveType"/>
+</ownedAttribute>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503067112841_647598_7642" type="_18_5_1_46401b8_1503067095201_950221_7611"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503067118253_262919_7663" type="_18_5_1_46401b8_1503067095201_950221_7611"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502465792892_104354_7461" name="DeclareAssertionStatus">
+<superClass xmi:idref="_18_5_1_46401b8_1503069168103_170309_8295"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503069649920_269354_8446" name="assertionDeclaration" type="_18_5_1_46401b8_1501598040617_58094_7412"/>
+</ownedType>
+<ownedType xmi:type="emof:Enumeration" xmi:id="_18_5_1_46401b8_1502466216409_542696_7565" name="ActionRelationships">
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466235963_861401_7588" name="finishToStart"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466250267_344784_7590" name="finishToFinish"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466413947_501007_7592" name="startToStart"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502466737410_766843_7689" name="Argument::Reasoning"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502466755424_681772_7737" name="ReasoningAction" isAbstract="true">
+<superClass xmi:idref="_18_5_1_46401b8_1502464960968_166542_7216"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1502466768887_476075_7772" name="reasoning" type="_18_5_1_46401b8_1502466737410_766843_7689" lower="0"/>
+</ownedType>
+<ownedType xmi:type="emof:Enumeration" xmi:id="_18_5_1_46401b8_1502466964736_946691_7816" name="ActionType">
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466978856_867979_7839" name="create"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466985109_507641_7841" name="read"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466994537_526137_7843" name="update"/>
+<ownedLiteral xmi:id="_18_5_1_46401b8_1502466998855_41732_7845" name="delete"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1502808055585_743040_6669" name="TerminologyAction">
+<superClass xmi:idref="_18_5_1_46401b8_1502464150965_2667_6691"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503045916965_289896_7152" name="Property">
+<superClass xmi:idref="_18_5_1_46401b8_1501597107302_567911_6566"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503045958452_367374_7206"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503048227115_556583_7583" name="ArgumentGroup">
+<superClass xmi:idref="_18_5_1_46401b8_1501597762559_512418_7169"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503048299495_404832_7617" name="argumentationElement" type="_18_5_1_46401b8_1501597762559_512418_7169" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503048569368_7249_7656" name="ArtifactGroup">
+<superClass xmi:idref="_18_5_1_46401b8_1501595719015_693807_5606"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503048589971_19340_7690" name="artifactElement" type="_18_5_1_46401b8_1501595719015_693807_5606" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503048614291_346242_7719" name="TerminologyGroup">
+<superClass xmi:idref="_18_5_1_46401b8_1501595760604_622904_5633"/>
+<ownedAttribute xmi:id="_18_5_1_46401b8_1503048632666_545563_7753" name="terminologyElement" type="_18_5_1_46401b8_1501595760604_622904_5633" lower="0" upper="*"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503065891086_836891_7215"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503065927486_378859_7242"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503065953574_284657_7307" name="ArgumentAction" isAbstract="true"/>
+<ownedType xmi:type="emof:Enumeration" xmi:id="_18_5_1_46401b8_1503066260004_938660_7365" name="Value"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503066683329_196325_7425" name="IntroduceSupportingEvidence"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503066771269_383030_7458"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067049306_941047_7581" name="GroupArgumentElements">
+<superClass xmi:idref="_18_5_1_46401b8_1503065953574_284657_7307"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067095201_950221_7611" name="Argument::Assertion"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067129740_111792_7680"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067138536_569938_7707"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067189586_199939_7799"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067308925_443313_7856" name="ArtifactAction"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503067323898_553780_7910" name="AssuranceCaseAction"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503068081330_12547_8115" name="DeclareConcrete">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503068091243_800680_8142" name="DeclareAbstract">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503068149647_721792_8175" name="DeclareIsCitation">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503068214337_418531_8202" name="DeclareNonCitation">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503068429593_869636_8229" name="Name">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503068440143_295316_8256" name="Describe">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503069168103_170309_8295" name="AssertionAction">
+<superClass xmi:idref="_18_5_1_46401b8_1503065953574_284657_7307"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503069266650_803031_8324" name="BaseAction"/>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503069315936_744011_8354" name="TagValue">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503069323057_839757_8381" name="ConstrainImplementation">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503069337037_5598_8408" name="_Note">
+<superClass xmi:idref="_18_5_1_46401b8_1503069266650_803031_8324"/>
+</ownedType>
+<ownedType xmi:type="emof:Class" xmi:id="_18_5_1_46401b8_1503070304757_80420_8457"/>
+</emof:Package>
+<emof:Tag xmlns:emof="http://schema.omg.org/spec/MOF/2.0/emof.xml" xmi:id="_18_5_1_46401b8_1501594068825_351909_4666_author" name="author" element="eee_1045467100313_135436_1" value="Ran Wei&#10;Tim Kelly"/>
+<emof:Tag xmlns:emof="http://schema.omg.org/spec/MOF/2.0/emof.xml" xmi:id="_18_5_1_46401b8_1501594068825_351909_4666_version" name="version" element="eee_1045467100313_135436_1" value="2.0"/>
+</xmi:XMI>
+
+
+
+

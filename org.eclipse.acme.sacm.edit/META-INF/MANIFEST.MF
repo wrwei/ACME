@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SACM Edit
+Bundle-SymbolicName: org.eclipse.acme.sacm.edit;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Bundle-Activator: base.provider.BaseEditPlugin$Implementation
+Bundle-Vendor: SAG
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: base.provider,
+ argumentation.provider,
+ artifact.provider,
+ terminology.provider,
+ assuranceCase.provider
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.acme.sacm;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ org.eclipse.acme.sacm.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: org.eclipse.acme.sacm.edit
