@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated gsn -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="gsn.presentation.Gsn_ModelWizardID"
+            name="%_UI_Gsn_ModelWizard_label"
+            class="gsn.presentation.Gsn_ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Gsn_ModelFile.gif">
+         <description>%_UI_Gsn_ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated gsn -->
+      <editor
+            id="gsn.presentation.Gsn_EditorID"
+            name="%_UI_Gsn_Editor_label"
+            icon="icons/full/obj16/Gsn_ModelFile.gif"
+            extensions="gsn"
+            class="gsn.presentation.Gsn_Editor"
+            contributorClass="gsn.presentation.Gsn_ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated gsn -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="argumentation.presentation.Argumentation_ModelWizardID"
+            name="%_UI_Argumentation_ModelWizard_label"
+            class="argumentation.presentation.Argumentation_ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Argumentation_ModelFile.gif">
+         <description>%_UI_Argumentation_ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated gsn -->
+      <editor
+            id="argumentation.presentation.Argumentation_EditorID"
+            name="%_UI_Argumentation_Editor_label"
+            icon="icons/full/obj16/Argumentation_ModelFile.gif"
+            extensions="argumentation"
+            class="argumentation.presentation.Argumentation_Editor"
+            contributorClass="argumentation.presentation.Argumentation_ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated gsn -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="base.presentation.Base_ModelWizardID"
+            name="%_UI_Base_ModelWizard_label"
+            class="base.presentation.Base_ModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Base_ModelFile.gif">
+         <description>%_UI_Base_ModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated gsn -->
+      <editor
+            id="base.presentation.Base_EditorID"
+            name="%_UI_Base_Editor_label"
+            icon="icons/full/obj16/Base_ModelFile.gif"
+            extensions="base"
+            class="base.presentation.Base_Editor"
+            contributorClass="base.presentation.Base_ActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

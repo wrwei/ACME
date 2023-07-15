@@ -1,18 +1,17 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: ACME models
-Bundle-SymbolicName: org.eclipse.acme.model;singleton:=true
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.acme.gsn;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: .
-Bundle-Vendor: SAG
+Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: gsn,
  gsn.impl,
- gsn.util,
- cae,
- cae.impl,
- cae.util
-Require-Bundle: org.eclipse.acme.sacm;visibility:=reexport
+ gsn.util
+Require-Bundle: org.eclipse.acme.sacm;visibility:=reexport,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Automatic-Module-Name: org.eclipse.acme.model
+Automatic-Module-Name: org.eclipse.acme.gsn
